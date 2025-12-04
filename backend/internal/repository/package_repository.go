@@ -2,7 +2,7 @@ package repository
 
 import (
 	"errors"
-	"quizora-backend/internal/models"
+	"github.com/Mahfuz2811/medecole/backend/internal/models"
 
 	"gorm.io/gorm"
 )

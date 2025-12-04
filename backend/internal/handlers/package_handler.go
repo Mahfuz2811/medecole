@@ -2,11 +2,11 @@ package handlers
 
 import (
 	"errors"
-	"quizora-backend/internal/cache"
-	"quizora-backend/internal/dto"
-	"quizora-backend/internal/repository"
-	"quizora-backend/internal/response"
-	"quizora-backend/internal/service"
+	"github.com/Mahfuz2811/medecole/backend/internal/cache"
+	"github.com/Mahfuz2811/medecole/backend/internal/dto"
+	"github.com/Mahfuz2811/medecole/backend/internal/repository"
+	"github.com/Mahfuz2811/medecole/backend/internal/response"
+	"github.com/Mahfuz2811/medecole/backend/internal/service"
 	"strconv"
 
 	"github.com/gin-gonic/gin"

@@ -1,6 +1,6 @@
 package dto
 
-import "quizora-backend/internal/models"
+import "github.com/Mahfuz2811/medecole/backend/internal/models"
 
 // PackageListRequest represents request parameters for listing packages
 type PackageListRequest struct {

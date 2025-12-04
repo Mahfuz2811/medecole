@@ -1,6 +1,6 @@
 package dto
 
-import "quizora-backend/internal/models"
+import "github.com/Mahfuz2811/medecole/backend/internal/models"
 
 // ExamResponse represents the API response structure for package exams
 type ExamResponse struct {

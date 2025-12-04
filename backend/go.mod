@@ -1,4 +1,4 @@
-module quizora-backend
+module github.com/Mahfuz2811/medecole/backend
 
 go 1.24.0
 

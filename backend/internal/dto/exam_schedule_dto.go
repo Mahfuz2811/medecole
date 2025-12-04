@@ -1,6 +1,6 @@
 package dto
 
-import "quizora-backend/internal/models"
+import "github.com/Mahfuz2811/medecole/backend/internal/models"
 
 // ExamScheduleResponse represents minimal exam data for package details page
 type ExamScheduleResponse struct {

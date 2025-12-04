@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	appconfig "quizora-backend/internal/config"
+	appconfig "github.com/Mahfuz2811/medecole/backend/internal/config"
 
 	"github.com/redis/go-redis/v9"
 )

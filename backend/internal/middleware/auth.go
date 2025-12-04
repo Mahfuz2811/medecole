@@ -2,9 +2,9 @@ package middleware
 
 import (
 	"net/http"
-	"quizora-backend/internal/models"
-	"quizora-backend/internal/service"
-	"quizora-backend/internal/utils"
+	"github.com/Mahfuz2811/medecole/backend/internal/models"
+	"github.com/Mahfuz2811/medecole/backend/internal/service"
+	"github.com/Mahfuz2811/medecole/backend/internal/utils"
 	"strings"
 
 	"github.com/gin-gonic/gin"

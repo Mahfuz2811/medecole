@@ -1,9 +1,9 @@
 package routes
 
 import (
-	"quizora-backend/internal/handlers"
-	"quizora-backend/internal/middleware"
-	"quizora-backend/internal/service"
+	"github.com/Mahfuz2811/medecole/backend/internal/handlers"
+	"github.com/Mahfuz2811/medecole/backend/internal/middleware"
+	"github.com/Mahfuz2811/medecole/backend/internal/service"
 
 	"github.com/gin-gonic/gin"
 )

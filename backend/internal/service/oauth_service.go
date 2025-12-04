@@ -9,9 +9,9 @@ import (
 	"net/http"
 	"time"
 
-	"quizora-backend/internal/cache"
-	"quizora-backend/internal/config"
-	"quizora-backend/internal/models"
+	"github.com/Mahfuz2811/medecole/backend/internal/cache"
+	"github.com/Mahfuz2811/medecole/backend/internal/config"
+	"github.com/Mahfuz2811/medecole/backend/internal/models"
 
 	"github.com/google/uuid"
 	"golang.org/x/oauth2"

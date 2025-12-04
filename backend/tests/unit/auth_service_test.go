@@ -2,11 +2,11 @@ package unit
 
 import (
 	"os"
-	"quizora-backend/internal/config"
-	"quizora-backend/internal/database"
-	"quizora-backend/internal/models"
-	"quizora-backend/internal/service"
-	"quizora-backend/tests/helpers"
+	"github.com/Mahfuz2811/medecole/backend/internal/config"
+	"github.com/Mahfuz2811/medecole/backend/internal/database"
+	"github.com/Mahfuz2811/medecole/backend/internal/models"
+	"github.com/Mahfuz2811/medecole/backend/internal/service"
+	"github.com/Mahfuz2811/medecole/backend/tests/helpers"
 	"strings"
 	"testing"
 

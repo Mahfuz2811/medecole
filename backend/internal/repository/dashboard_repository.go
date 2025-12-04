@@ -1,8 +1,8 @@
 package repository
 
 import (
-	"quizora-backend/internal/models"
-	"quizora-backend/internal/types"
+	"github.com/Mahfuz2811/medecole/backend/internal/models"
+	"github.com/Mahfuz2811/medecole/backend/internal/types"
 
 	"gorm.io/gorm"
 )

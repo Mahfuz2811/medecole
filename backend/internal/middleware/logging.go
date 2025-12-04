@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"quizora-backend/internal/logger"
+	"github.com/Mahfuz2811/medecole/backend/internal/logger"
 
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"

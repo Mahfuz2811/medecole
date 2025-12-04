@@ -3,8 +3,8 @@ package database
 import (
 	"fmt"
 	"log"
-	"quizora-backend/internal/config"
-	"quizora-backend/internal/models"
+	"github.com/Mahfuz2811/medecole/backend/internal/config"
+	"github.com/Mahfuz2811/medecole/backend/internal/models"
 
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"

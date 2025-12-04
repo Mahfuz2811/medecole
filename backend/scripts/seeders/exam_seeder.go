@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
-	"quizora-backend/internal/database"
-	"quizora-backend/internal/models"
+	"github.com/Mahfuz2811/medecole/backend/internal/database"
+	"github.com/Mahfuz2811/medecole/backend/internal/models"
 	"strings"
 	"time"
 )

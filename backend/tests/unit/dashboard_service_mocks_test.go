@@ -1,9 +1,9 @@
 package unit
 
 import (
-	"quizora-backend/internal/models"
-	"quizora-backend/internal/repository"
-	"quizora-backend/internal/types"
+	"github.com/Mahfuz2811/medecole/backend/internal/models"
+	"github.com/Mahfuz2811/medecole/backend/internal/repository"
+	"github.com/Mahfuz2811/medecole/backend/internal/types"
 	"time"
 
 	"github.com/stretchr/testify/mock"

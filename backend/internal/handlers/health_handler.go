@@ -18,7 +18,7 @@ func NewHealthHandler() *HealthHandler {
 func (h *HealthHandler) HealthCheck(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
 		"status":  "healthy",
-		"service": "quizora-backend",
+		"service": "medecole-backend",
 		"version": "1.0.0",
 	})
 }

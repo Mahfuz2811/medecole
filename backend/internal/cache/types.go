@@ -1,6 +1,6 @@
 package cache
 
-import appconfig "quizora-backend/internal/config"
+import appconfig "github.com/Mahfuz2811/medecole/backend/internal/config"
 
 // CacheConfig holds configuration for cache implementations
 type CacheConfig struct {

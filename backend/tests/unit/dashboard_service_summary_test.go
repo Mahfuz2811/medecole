@@ -2,9 +2,9 @@ package unit
 
 import (
 	"errors"
-	"quizora-backend/internal/models"
-	"quizora-backend/internal/service"
-	"quizora-backend/internal/types"
+	"github.com/Mahfuz2811/medecole/backend/internal/models"
+	"github.com/Mahfuz2811/medecole/backend/internal/service"
+	"github.com/Mahfuz2811/medecole/backend/internal/types"
 	"testing"
 	"time"
 

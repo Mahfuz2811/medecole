@@ -1,6 +1,6 @@
 package seeders
 
-import "quizora-backend/internal/models"
+import "github.com/Mahfuz2811/medecole/backend/internal/models"
 
 // Sample data structures
 type SampleSubject struct {

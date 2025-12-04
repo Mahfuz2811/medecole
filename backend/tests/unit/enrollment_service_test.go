@@ -3,11 +3,11 @@ package unit
 import (
 	"context"
 	"errors"
-	"quizora-backend/internal/dto"
-	"quizora-backend/internal/mapper"
-	"quizora-backend/internal/models"
-	"quizora-backend/internal/repository"
-	"quizora-backend/internal/service"
+	"github.com/Mahfuz2811/medecole/backend/internal/dto"
+	"github.com/Mahfuz2811/medecole/backend/internal/mapper"
+	"github.com/Mahfuz2811/medecole/backend/internal/models"
+	"github.com/Mahfuz2811/medecole/backend/internal/repository"
+	"github.com/Mahfuz2811/medecole/backend/internal/service"
 	"testing"
 	"time"
 

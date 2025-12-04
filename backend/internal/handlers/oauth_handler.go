@@ -2,8 +2,8 @@ package handlers
 
 import (
 	"net/http"
-	"quizora-backend/internal/models"
-	"quizora-backend/internal/service"
+	"github.com/Mahfuz2811/medecole/backend/internal/models"
+	"github.com/Mahfuz2811/medecole/backend/internal/service"
 
 	"github.com/gin-gonic/gin"
 )

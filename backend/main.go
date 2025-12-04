@@ -2,15 +2,15 @@ package main
 
 import (
 	"log"
-	"quizora-backend/internal/cache"
-	"quizora-backend/internal/config"
-	"quizora-backend/internal/database"
-	"quizora-backend/internal/handlers"
-	"quizora-backend/internal/logger"
-	"quizora-backend/internal/middleware"
-	"quizora-backend/internal/routes"
-	"quizora-backend/internal/server"
-	"quizora-backend/internal/service"
+	"github.com/Mahfuz2811/medecole/backend/internal/cache"
+	"github.com/Mahfuz2811/medecole/backend/internal/config"
+	"github.com/Mahfuz2811/medecole/backend/internal/database"
+	"github.com/Mahfuz2811/medecole/backend/internal/handlers"
+	"github.com/Mahfuz2811/medecole/backend/internal/logger"
+	"github.com/Mahfuz2811/medecole/backend/internal/middleware"
+	"github.com/Mahfuz2811/medecole/backend/internal/routes"
+	"github.com/Mahfuz2811/medecole/backend/internal/server"
+	"github.com/Mahfuz2811/medecole/backend/internal/service"
 
 	"github.com/gin-gonic/gin"
 )

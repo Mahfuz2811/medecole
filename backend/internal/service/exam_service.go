@@ -3,11 +3,11 @@ package service
 import (
 	"encoding/json"
 	"fmt"
-	"quizora-backend/internal/dto"
-	"quizora-backend/internal/logger"
-	"quizora-backend/internal/mapper"
-	"quizora-backend/internal/models"
-	"quizora-backend/internal/repository"
+	"github.com/Mahfuz2811/medecole/backend/internal/dto"
+	"github.com/Mahfuz2811/medecole/backend/internal/logger"
+	"github.com/Mahfuz2811/medecole/backend/internal/mapper"
+	"github.com/Mahfuz2811/medecole/backend/internal/models"
+	"github.com/Mahfuz2811/medecole/backend/internal/repository"
 	"strings"
 	"time"
 

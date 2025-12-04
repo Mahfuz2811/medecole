@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"quizora-backend/internal/handlers"
+	"github.com/Mahfuz2811/medecole/backend/internal/handlers"
 
 	"github.com/gin-gonic/gin"
 )

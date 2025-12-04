@@ -2,9 +2,9 @@ package mapper
 
 import (
 	"encoding/json"
-	"quizora-backend/internal/dto"
-	"quizora-backend/internal/models"
-	"quizora-backend/internal/repository"
+	"github.com/Mahfuz2811/medecole/backend/internal/dto"
+	"github.com/Mahfuz2811/medecole/backend/internal/models"
+	"github.com/Mahfuz2811/medecole/backend/internal/repository"
 	"time"
 )
 

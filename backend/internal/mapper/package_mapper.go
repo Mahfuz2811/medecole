@@ -1,8 +1,8 @@
 package mapper
 
 import (
-	"quizora-backend/internal/dto"
-	"quizora-backend/internal/models"
+	"github.com/Mahfuz2811/medecole/backend/internal/dto"
+	"github.com/Mahfuz2811/medecole/backend/internal/models"
 )
 
 // PackageMapper handles conversion between models and DTOs

@@ -5,10 +5,10 @@ import (
 	"log"
 	"time"
 
-	"quizora-backend/internal/cache"
-	"quizora-backend/internal/dto"
-	"quizora-backend/internal/mapper"
-	"quizora-backend/internal/repository"
+	"github.com/Mahfuz2811/medecole/backend/internal/cache"
+	"github.com/Mahfuz2811/medecole/backend/internal/dto"
+	"github.com/Mahfuz2811/medecole/backend/internal/mapper"
+	"github.com/Mahfuz2811/medecole/backend/internal/repository"
 )
 
 // PackageService handles business logic for packages

@@ -36,7 +36,7 @@ func GenerateJWT(userID uint, msisdn, secret string) (string, error) {
 			ExpiresAt: jwt.NewNumericDate(time.Now().Add(24 * time.Hour)), // 24 hours
 			IssuedAt:  jwt.NewNumericDate(time.Now()),
 			NotBefore: jwt.NewNumericDate(time.Now()),
-			Issuer:    "quizora-backend",
+			Issuer:    "medecole-backend",
 			Subject:   "user_auth",
 		},
 	}

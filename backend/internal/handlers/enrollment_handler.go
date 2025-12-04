@@ -4,11 +4,11 @@ import (
 	"net/http"
 	"strconv"
 
-	"quizora-backend/internal/dto"
-	"quizora-backend/internal/errors"
-	"quizora-backend/internal/logger"
-	"quizora-backend/internal/models"
-	"quizora-backend/internal/service"
+	"github.com/Mahfuz2811/medecole/backend/internal/dto"
+	"github.com/Mahfuz2811/medecole/backend/internal/errors"
+	"github.com/Mahfuz2811/medecole/backend/internal/logger"
+	"github.com/Mahfuz2811/medecole/backend/internal/models"
+	"github.com/Mahfuz2811/medecole/backend/internal/service"
 
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"

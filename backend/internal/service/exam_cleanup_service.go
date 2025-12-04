@@ -2,8 +2,8 @@ package service
 
 import (
 	"context"
-	"quizora-backend/internal/logger"
-	"quizora-backend/internal/repository"
+	"github.com/Mahfuz2811/medecole/backend/internal/logger"
+	"github.com/Mahfuz2811/medecole/backend/internal/repository"
 	"time"
 
 	"github.com/sirupsen/logrus"

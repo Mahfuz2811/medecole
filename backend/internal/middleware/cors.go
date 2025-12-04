@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"quizora-backend/internal/config"
+	"github.com/Mahfuz2811/medecole/backend/internal/config"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"

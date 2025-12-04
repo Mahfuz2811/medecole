@@ -2,8 +2,8 @@ package service
 
 import (
 	"errors"
-	"quizora-backend/internal/models"
-	"quizora-backend/internal/utils"
+	"github.com/Mahfuz2811/medecole/backend/internal/models"
+	"github.com/Mahfuz2811/medecole/backend/internal/utils"
 
 	"gorm.io/gorm"
 )

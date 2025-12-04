@@ -1,14 +1,14 @@
 package routes
 
 import (
-	"quizora-backend/internal/cache"
-	"quizora-backend/internal/config"
-	"quizora-backend/internal/database"
-	"quizora-backend/internal/handlers"
-	"quizora-backend/internal/mapper"
-	"quizora-backend/internal/middleware"
-	"quizora-backend/internal/repository"
-	"quizora-backend/internal/service"
+	"github.com/Mahfuz2811/medecole/backend/internal/cache"
+	"github.com/Mahfuz2811/medecole/backend/internal/config"
+	"github.com/Mahfuz2811/medecole/backend/internal/database"
+	"github.com/Mahfuz2811/medecole/backend/internal/handlers"
+	"github.com/Mahfuz2811/medecole/backend/internal/mapper"
+	"github.com/Mahfuz2811/medecole/backend/internal/middleware"
+	"github.com/Mahfuz2811/medecole/backend/internal/repository"
+	"github.com/Mahfuz2811/medecole/backend/internal/service"
 
 	"github.com/gin-gonic/gin"
 )

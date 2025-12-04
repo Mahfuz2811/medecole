@@ -5,9 +5,9 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
-	"quizora-backend/internal/cache"
-	"quizora-backend/internal/logger"
-	"quizora-backend/internal/models"
+	"github.com/Mahfuz2811/medecole/backend/internal/cache"
+	"github.com/Mahfuz2811/medecole/backend/internal/logger"
+	"github.com/Mahfuz2811/medecole/backend/internal/models"
 	"time"
 
 	"github.com/sirupsen/logrus"

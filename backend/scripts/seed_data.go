@@ -2,9 +2,9 @@ package main
 
 import (
 	"log"
-	"quizora-backend/internal/config"
-	"quizora-backend/internal/database"
-	"quizora-backend/scripts/seeders"
+	"github.com/Mahfuz2811/medecole/backend/internal/config"
+	"github.com/Mahfuz2811/medecole/backend/internal/database"
+	"github.com/Mahfuz2811/medecole/backend/scripts/seeders"
 )
 
 func main() {

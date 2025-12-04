@@ -1,7 +1,7 @@
 package unit
 
 import (
-	"quizora-backend/internal/utils"
+	"github.com/Mahfuz2811/medecole/backend/internal/utils"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
