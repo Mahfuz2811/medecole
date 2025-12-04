@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+
 	"github.com/Mahfuz2811/medecole/backend/internal/cache"
 	"github.com/Mahfuz2811/medecole/backend/internal/config"
 	"github.com/Mahfuz2811/medecole/backend/internal/database"
