@@ -99,7 +99,7 @@ export const Header: React.FC<HeaderProps> = ({
 						</div>
 						<div className="hidden sm:block">
 							<h1 className="text-lg md:text-xl font-bold text-gray-900">
-								Quizora
+								Medecole
 							</h1>
 							<p className="text-xs text-gray-500 hidden md:block">
 								MCQ Practice Platform

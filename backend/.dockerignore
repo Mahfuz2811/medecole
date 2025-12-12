@@ -5,7 +5,6 @@ bin/
 *.so
 *.dylib
 main
-quizora-backend
 
 # Test files
 *_test.go

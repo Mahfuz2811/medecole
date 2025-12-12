@@ -111,7 +111,7 @@ function AuthPageContent() {
 								<h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 tracking-tight">
 									Welcome to
 									<span className="block text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 mt-1">
-										Quizora
+										Medecole
 									</span>
 								</h1>
 								<p className="mt-3 text-base sm:text-lg text-gray-600 max-w-sm mx-auto">

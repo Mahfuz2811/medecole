@@ -1,0 +1,41 @@
+# Environment variables (contains secrets)
+.env
+.env.local
+.env.production
+.env.*.local
+
+# SSL Certificates and Keys
+nginx/ssl/*
+*.pem
+*.key
+*.crt
+*.csr
+
+# MySQL data and configuration
+mysql/init/*
+!mysql/init/.gitkeep
+
+# Logs
+*.log
+nginx/logs/*
+logs/*
+
+# Docker volumes (if mounted locally)
+data/*
+volumes/*
+
+# Backup files
+*.sql
+*.sql.gz
+backups/*
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~
+.DS_Store
+
+# IDE
+.vscode/
+.idea/

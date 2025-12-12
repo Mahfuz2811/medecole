@@ -4,10 +4,11 @@ import (
 	"fmt"
 	"net/http"
 	"os"
-	"github.com/Mahfuz2811/medecole/backend/internal/models"
-	"github.com/Mahfuz2811/medecole/backend/tests/helpers"
 	"testing"
 	"time"
+
+	"github.com/Mahfuz2811/medecole/backend/internal/models"
+	"github.com/Mahfuz2811/medecole/backend/tests/helpers"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -420,7 +421,7 @@ func TestHealthEndpoint(t *testing.T) {
 	helpers.ParseJSONResponse(t, response, &healthResp)
 
 	assert.Equal(t, "ok", healthResp["status"])
-	assert.Contains(t, healthResp["message"], "Quizora Backend API is running")
+	assert.Contains(t, healthResp["message"], "Medecole Backend API is running")
 }
 
 func TestCORSHeaders(t *testing.T) {

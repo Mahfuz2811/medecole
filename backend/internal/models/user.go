@@ -10,8 +10,8 @@ import (
 type User struct {
 	ID        uint           `json:"id" gorm:"primaryKey"`
 	Name      string         `json:"name" gorm:"not null;size:100"`
-	MSISDN    string         `json:"msisdn" gorm:"size:20"` // Nullable for social auth users
-	Password  string         `json:"-" gorm:"-"`            // Nullable for social auth users, "-" excludes from JSON
+	MSISDN    string         `json:"msisdn" gorm:"size:20;uniqueIndex"` // Nullable for social auth users, unique constraint
+	Password  string         `json:"-" gorm:"type:varchar(255)"`        // Nullable for social auth users, hidden from JSON
 	IsActive  bool           `json:"is_active" gorm:"default:true"`
 	CreatedAt time.Time      `json:"created_at"`
 	UpdatedAt time.Time      `json:"updated_at"`

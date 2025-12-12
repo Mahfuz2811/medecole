@@ -7,13 +7,14 @@ import (
 	"net/http"
 	"net/http/httptest"
 	"os"
+	"testing"
+
 	"github.com/Mahfuz2811/medecole/backend/internal/config"
 	"github.com/Mahfuz2811/medecole/backend/internal/database"
 	"github.com/Mahfuz2811/medecole/backend/internal/handlers"
 	"github.com/Mahfuz2811/medecole/backend/internal/middleware"
 	"github.com/Mahfuz2811/medecole/backend/internal/models"
 	"github.com/Mahfuz2811/medecole/backend/internal/service"
-	"testing"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
@@ -84,7 +85,7 @@ func SetupTestApp(t *testing.T) *TestApp {
 	r.GET("/health", func(c *gin.Context) {
 		c.JSON(200, gin.H{
 			"status":  "ok",
-			"message": "Quizora Backend API is running",
+			"message": "Medecole Backend API is running",
 		})
 	})
 

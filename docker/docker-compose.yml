@@ -1,0 +1,52 @@
+services:
+  # Backend API (Development Mode with Hot Reload)
+  backend:
+    build:
+      context: ../backend
+      dockerfile: ../docker/backend.dev.Dockerfile
+    container_name: medecole-backend-dev
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "${BACKEND_PORT}:${BACKEND_PORT}"
+    volumes:
+      # Mount source code for hot reload
+      - ../backend:/app
+      # Exclude vendor and build artifacts
+      - /app/vendor
+      - /app/tmp
+    working_dir: /app
+    networks:
+      - medecole-local
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  # Frontend Application (Development Mode with Hot Reload)
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: ../docker/frontend.dev.Dockerfile
+    container_name: medecole-frontend-dev
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: development
+      WATCHPACK_POLLING: "true"
+    ports:
+      - "${FRONTEND_PORT}:3000"
+    volumes:
+      # Mount source code for hot reload
+      - ../frontend:/app
+      # Exclude node_modules and .next from host
+      - /app/node_modules
+      - /app/.next
+    working_dir: /app
+    networks:
+      - medecole-local
+
+networks:
+  medecole-local:
+    driver: bridge
+    name: medecole-local-network

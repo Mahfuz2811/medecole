@@ -2,13 +2,14 @@ package unit
 
 import (
 	"os"
+	"strings"
+	"testing"
+
 	"github.com/Mahfuz2811/medecole/backend/internal/config"
 	"github.com/Mahfuz2811/medecole/backend/internal/database"
 	"github.com/Mahfuz2811/medecole/backend/internal/models"
 	"github.com/Mahfuz2811/medecole/backend/internal/service"
 	"github.com/Mahfuz2811/medecole/backend/tests/helpers"
-	"strings"
-	"testing"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

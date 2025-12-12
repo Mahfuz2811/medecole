@@ -2,9 +2,10 @@ package seeders
 
 import (
 	"log"
+	"time"
+
 	"github.com/Mahfuz2811/medecole/backend/internal/database"
 	"github.com/Mahfuz2811/medecole/backend/internal/models"
-	"time"
 )
 
 type PackageSeeder struct{}
@@ -33,9 +34,9 @@ func (s *PackageSeeder) Seed(db *database.Database, coupons []models.Coupon) []m
 			Description:  StringPtr("Complete preparation package for FCPS Part 1 Medicine examination"),
 			PackageType:  models.PackageTypePremium,
 			Price:        149.99,
-			ImageURL:     StringPtr("https://raw.githubusercontent.com/mahfuz2811/quizora-images/master/packages/fcps_part_1_medicine.png"),
+			ImageURL:     StringPtr("https://raw.githubusercontent.com/mahfuz2811/medecole-images/master/packages/fcps_part_1_medicine.png"),
 			ImageAlt:     StringPtr("FCPS Part 1 Medicine preparation course with comprehensive study materials"),
-			ThumbnailURL: StringPtr("https://raw.githubusercontent.com/mahfuz2811/quizora-images/master/packages/fcps_part_1_medicine.png"),
+			ThumbnailURL: StringPtr("https://raw.githubusercontent.com/mahfuz2811/medecole-images/master/packages/fcps_part_1_medicine.png"),
 			ValidityType: models.ValidityTypeFixed,
 			ValidityDate: &fixedDate1, // Expires 6 months from now
 			TotalExams:   23,          // Updated to reflect actual exam assignment

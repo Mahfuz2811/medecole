@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Quizora - MCQ Practice Platform",
-	description: "Practice MCQs and improve your knowledge with Quizora",
+	title: "Medecole - MCQ Practice Platform",
+	description: "Practice MCQs and improve your knowledge with Medecole",
 };
 
 export default function RootLayout({

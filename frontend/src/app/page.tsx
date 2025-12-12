@@ -44,8 +44,8 @@ export default function CardsPage() {
 				<div className="bg-gradient-to-r from-blue-500 to-purple-600 p-6 text-white mb-6">
 					<h2 className="text-xl font-bold mb-2">
 						{isAuthenticated
-							? "Welcome back to Quizora! 🎓"
-							: "Welcome to Quizora! 🎓"}
+							? "Welcome back to Medecole! 🎓"
+							: "Welcome to Medecole! 🎓"}
 					</h2>
 					<p className="text-blue-100 mb-4">
 						{isAuthenticated

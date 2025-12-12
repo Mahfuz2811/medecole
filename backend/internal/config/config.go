@@ -140,7 +140,7 @@ func Load() *Config {
 			Port:     getEnv("DB_PORT", "3306"),
 			User:     getEnv("DB_USER", "root"),
 			Password: getEnv("DB_PASSWORD", "root"),
-			Name:     getEnv("DB_NAME", "quizora"),
+			Name:     getEnv("DB_NAME", "medecole"),
 		},
 		Redis: RedisConfig{
 			Host:     getEnv("REDIS_HOST", "localhost"),

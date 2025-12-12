@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Quizora Backup Script
+# Medecole Backup Script
 # Usage: ./backup.sh
-# Cron: 0 2 * * * /home/deployer/quizora/deployment/scripts/backup.sh
+# Cron: 0 2 * * * /home/deployer/medecole/deployment/scripts/backup.sh
 
 set -e
 
@@ -12,7 +12,7 @@ DATE=$(date +%Y%m%d_%H%M%S)
 RETENTION_DAYS=30
 
 # Load environment variables
-source /home/deployer/quizora/deployment/.env
+source /home/deployer/medecole/deployment/.env
 
 echo "Starting backup at $(date)"
 
@@ -21,29 +21,29 @@ mkdir -p "$BACKUP_DIR"/{mysql,redis,logs}
 
 # Backup MySQL database
 echo "Backing up MySQL database..."
-docker exec quizora-mysql mysqldump \
+docker exec medecole-mysql mysqldump \
     -u root \
     -p"$DB_PASSWORD" \
     --single-transaction \
     --routines \
     --triggers \
     --events \
-    quizora | gzip > "$BACKUP_DIR/mysql/quizora_$DATE.sql.gz"
+    medecole | gzip > "$BACKUP_DIR/mysql/medecole$DATE.sql.gz"
 
-echo "MySQL backup completed: quizora_$DATE.sql.gz"
+echo "MySQL backup completed: medecole$DATE.sql.gz"
 
 # Backup Redis data
 echo "Backing up Redis data..."
-docker exec quizora-redis redis-cli -a "$REDIS_PASSWORD" BGSAVE
+docker exec medecole-redis redis-cli -a "$REDIS_PASSWORD" BGSAVE
 sleep 5
-docker cp quizora-redis:/data/dump.rdb "$BACKUP_DIR/redis/redis_$DATE.rdb"
+docker cp medecole-redis:/data/dump.rdb "$BACKUP_DIR/redis/redis_$DATE.rdb"
 
 echo "Redis backup completed: redis_$DATE.rdb"
 
 # Backup application logs
 echo "Backing up application logs..."
-docker cp quizora-backend:/app/logs "$BACKUP_DIR/logs/backend_$DATE"
-docker cp quizora-nginx:/var/log/nginx "$BACKUP_DIR/logs/nginx_$DATE"
+docker cp medecole-backend:/app/logs "$BACKUP_DIR/logs/backend_$DATE"
+docker cp medecole-nginx:/var/log/nginx "$BACKUP_DIR/logs/nginx_$DATE"
 
 echo "Logs backup completed"
 
